@@ -25,14 +25,14 @@ export default [
        'color_f':'#81A763',
        'egg_group_1':'monster',
        'egg_group_2':'plant',
-       'url_image':'http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png',
+       'url_image':'https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png',
        'generation_id':1,
        'evolves_from_species_id':'NA',
        'evolution_chain_id':1,
        'shape_id':8,
        'shape':'quadruped',
        'pokebase':'bulbasaur',
-       'pokedex':'http://www.pokemon.com/us/pokedex/bulbasaur'
+       'pokedex':'https://www.pokemon.com/us/pokedex/bulbasaur'
     },
     {
        '_id':'5cef3501ef6005a77cd4fd19',
@@ -58,14 +58,14 @@ export default [
        'color_f':'#81A763',
        'egg_group_1':'monster',
        'egg_group_2':'plant',
-       'url_image':'http://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png',
+       'url_image':'https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png',
        'generation_id':1,
        'evolves_from_species_id':'1',
        'evolution_chain_id':1,
        'shape_id':8,
        'shape':'quadruped',
        'pokebase':'ivysaur',
-       'pokedex':'http://www.pokemon.com/us/pokedex/ivysaur'
+       'pokedex':'https://www.pokemon.com/us/pokedex/ivysaur'
     },
     {
        '_id':'5cef3501ef6005a77cd4fd1a',
@@ -91,14 +91,14 @@ export default [
        'color_f':'NA',
        'egg_group_1':'monster',
        'egg_group_2':'dragon',
-       'url_image':'http://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
+       'url_image':'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
        'generation_id':1,
        'evolves_from_species_id':'NA',
        'evolution_chain_id':2,
        'shape_id':6,
        'shape':'upright',
        'pokebase':'charmander',
-       'pokedex':'http://www.pokemon.com/us/pokedex/charmander'
+       'pokedex':'https://www.pokemon.com/us/pokedex/charmander'
     },
     {
        '_id':'5cef3501ef6005a77cd4fd1b',
@@ -124,14 +124,14 @@ export default [
        'color_f':'NA',
        'egg_group_1':'monster',
        'egg_group_2':'dragon',
-       'url_image':'http://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png',
+       'url_image':'https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png',
        'generation_id':1,
        'evolves_from_species_id':'4',
        'evolution_chain_id':2,
        'shape_id':6,
        'shape':'upright',
        'pokebase':'charmeleon',
-       'pokedex':'http://www.pokemon.com/us/pokedex/charmeleon'
+       'pokedex':'https://www.pokemon.com/us/pokedex/charmeleon'
     },
     {
        '_id':'5cef3501ef6005a77cd4fd1c',
@@ -157,14 +157,14 @@ export default [
        'color_f':'#DE835E',
        'egg_group_1':'monster',
        'egg_group_2':'dragon',
-       'url_image':'http://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png',
+       'url_image':'https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png',
        'generation_id':1,
        'evolves_from_species_id':'5',
        'evolution_chain_id':2,
        'shape_id':6,
        'shape':'upright',
        'pokebase':'charizard',
-       'pokedex':'http://www.pokemon.com/us/pokedex/charizard'
+       'pokedex':'https://www.pokemon.com/us/pokedex/charizard'
     },
     {
        '_id':'5cef3501ef6005a77cd4fd1f',
@@ -190,14 +190,14 @@ export default [
        'color_f':'NA',
        'egg_group_1':'monster',
        'egg_group_2':'water1',
-       'url_image':'http://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png',
+       'url_image':'https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png',
        'generation_id':1,
        'evolves_from_species_id':'NA',
        'evolution_chain_id':3,
        'shape_id':6,
        'shape':'upright',
        'pokebase':'squirtle',
-       'pokedex':'http://www.pokemon.com/us/pokedex/squirtle'
+       'pokedex':'https://www.pokemon.com/us/pokedex/squirtle'
     },
     {
        '_id':'5cef3501ef6005a77cd4fd20',
@@ -223,14 +223,14 @@ export default [
        'color_f':'NA',
        'egg_group_1':'monster',
        'egg_group_2':'water1',
-       'url_image':'http://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png',
+       'url_image':'https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png',
        'generation_id':1,
        'evolves_from_species_id':'7',
        'evolution_chain_id':3,
        'shape_id':6,
        'shape':'upright',
        'pokebase':'wartortle',
-       'pokedex':'http://www.pokemon.com/us/pokedex/wartortle'
+       'pokedex':'https://www.pokemon.com/us/pokedex/wartortle'
     },
     {
        '_id':'5cef3501ef6005a77cd4fd21',
@@ -256,14 +256,14 @@ export default [
        'color_f':'NA',
        'egg_group_1':'monster',
        'egg_group_2':'water1',
-       'url_image':'http://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png',
+       'url_image':'https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png',
        'generation_id':1,
        'evolves_from_species_id':'8',
        'evolution_chain_id':3,
        'shape_id':6,
        'shape':'upright',
        'pokebase':'blastoise',
-       'pokedex':'http://www.pokemon.com/us/pokedex/blastoise'
+       'pokedex':'https://www.pokemon.com/us/pokedex/blastoise'
     },
     {
        '_id':'5cef3501ef6005a77cd4fd23',
@@ -289,14 +289,14 @@ export default [
        'color_f':'NA',
        'egg_group_1':'bug',
        'egg_group_2':'NA',
-       'url_image':'http://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png',
+       'url_image':'https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png',
        'generation_id':1,
        'evolves_from_species_id':'NA',
        'evolution_chain_id':4,
        'shape_id':2,
        'shape':'squiggle',
        'pokebase':'caterpie',
-       'pokedex':'http://www.pokemon.com/us/pokedex/caterpie'
+       'pokedex':'https://www.pokemon.com/us/pokedex/caterpie'
     },
     {
        '_id':'5cef3501ef6005a77cd4fd24',
@@ -322,14 +322,14 @@ export default [
        'color_f':'NA',
        'egg_group_1':'bug',
        'egg_group_2':'NA',
-       'url_image':'http://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png',
+       'url_image':'https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png',
        'generation_id':1,
        'evolves_from_species_id':'10',
        'evolution_chain_id':4,
        'shape_id':2,
        'shape':'squiggle',
        'pokebase':'metapod',
-       'pokedex':'http://www.pokemon.com/us/pokedex/metapod'
+       'pokedex':'https://www.pokemon.com/us/pokedex/metapod'
     },
     {
        '_id':'5cef3501ef6005a77cd4fd25',
@@ -355,14 +355,14 @@ export default [
        'color_f':'#A69A3F',
        'egg_group_1':'bug',
        'egg_group_2':'NA',
-       'url_image':'http://assets.pokemon.com/assets/cms2/img/pokedex/full/015.png',
+       'url_image':'https://assets.pokemon.com/assets/cms2/img/pokedex/full/015.png',
        'generation_id':1,
        'evolves_from_species_id':'14',
        'evolution_chain_id':5,
        'shape_id':13,
        'shape':'bug-wings',
        'pokebase':'beedrill',
-       'pokedex':'http://www.pokemon.com/us/pokedex/beedrill'
+       'pokedex':'https://www.pokemon.com/us/pokedex/beedrill'
     },
     {
        '_id':'5cef3501ef6005a77cd4fd26',
@@ -388,14 +388,14 @@ export default [
        'color_f':'#A69A3F',
        'egg_group_1':'bug',
        'egg_group_2':'NA',
-       'url_image':'http://assets.pokemon.com/assets/cms2/img/pokedex/full/013.png',
+       'url_image':'https://assets.pokemon.com/assets/cms2/img/pokedex/full/013.png',
        'generation_id':1,
        'evolves_from_species_id':'NA',
        'evolution_chain_id':5,
        'shape_id':2,
        'shape':'squiggle',
        'pokebase':'weedle',
-       'pokedex':'http://www.pokemon.com/us/pokedex/weedle'
+       'pokedex':'https://www.pokemon.com/us/pokedex/weedle'
     },
     {
        '_id':'5cef3501ef6005a77cd4fd27',
@@ -421,14 +421,14 @@ export default [
        'color_f':'#A69A3F',
        'egg_group_1':'bug',
        'egg_group_2':'NA',
-       'url_image':'http://assets.pokemon.com/assets/cms2/img/pokedex/full/014.png',
+       'url_image':'https://assets.pokemon.com/assets/cms2/img/pokedex/full/014.png',
        'generation_id':1,
        'evolves_from_species_id':'13',
        'evolution_chain_id':5,
        'shape_id':2,
        'shape':'squiggle',
        'pokebase':'kakuna',
-       'pokedex':'http://www.pokemon.com/us/pokedex/kakuna'
+       'pokedex':'https://www.pokemon.com/us/pokedex/kakuna'
     },
     {
        '_id':'5cef3501ef6005a77cd4fd29',
@@ -454,13 +454,13 @@ export default [
        'color_f':'#A8A295',
        'egg_group_1':'flying',
        'egg_group_2':'NA',
-       'url_image':'http://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png',
+       'url_image':'https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png',
        'generation_id':1,
        'evolves_from_species_id':'NA',
        'evolution_chain_id':6,
        'shape_id':9,
        'shape':'wings',
        'pokebase':'pidgey',
-       'pokedex':'http://www.pokemon.com/us/pokedex/pidgey'
+       'pokedex':'https://www.pokemon.com/us/pokedex/pidgey'
     }
 ]
