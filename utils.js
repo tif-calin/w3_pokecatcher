@@ -1,4 +1,5 @@
 const POKEDEX = 'POKEDEX';
+const HISTORY = 'HISTORY';
 
 export function getSubset(arr, exclude = [], sample = 3) {
     // remove duplicates and numbers too large from exclusion array
@@ -30,17 +31,20 @@ export function getSubset(arr, exclude = [], sample = 3) {
     return subsetElement;
 };
 
-export const findById = (itemArray, id) => {
+export function findById(itemArray, id) {
     for (let item of itemArray) {
         if (item['id'] === id) return item;
     }
     return null;
 };
 
-export const setDex = pokedex => {
+export function setDex(pokedex) {
     localStorage.setItem(POKEDEX, JSON.stringify(pokedex));
 };
 
-export function getPokedexEntry(id) {
+export function getDex() {
+    const dex = JSON.parse(localStorage.getItem(POKEDEX));
 
+    if (dex) return dex;
+    else return [];
 };

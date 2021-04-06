@@ -4,7 +4,7 @@ export function makePokemon(pokemon) {
     // create main label (wrapper)
     const lblMain = document.createElement('label');
     lblMain.classList.add('wrapper-v');
-    lblMain.id = 'pokemon-select';
+    lblMain.id = pokemon.id;
     lblMain.name = 'pokemon-select';
 
     // create input
