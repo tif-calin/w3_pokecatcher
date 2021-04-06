@@ -60,7 +60,32 @@ footer {
 
 h2 {
     font-size: 1.8rem;
-    font-weight: bold;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .gutter-right {
@@ -106,4 +131,18 @@ footer {
     80% {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
+}
+
+.wrapper-h, .wrapper-v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-h {
+    flex-direction: row;
+}
+
+.wrapper-v {
+    flex-direction: column;
 }
