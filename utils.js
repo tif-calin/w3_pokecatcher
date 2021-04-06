@@ -1,3 +1,5 @@
+const POKEDEX = 'POKEDEX';
+
 export function getSubset(arr, exclude = [], sample = 3) {
     // remove duplicates and numbers too large from exclusion array
     let excludeSet = [];
@@ -26,4 +28,8 @@ export function getSubset(arr, exclude = [], sample = 3) {
     for (let i of subsetIndex) subsetElement.push(arr[i]);
 
     return subsetElement;
+};
+
+export function getPokedexEntry(id) {
+
 };
