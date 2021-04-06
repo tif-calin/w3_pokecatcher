@@ -3,7 +3,7 @@ export function makePokemon(pokemon) {
 
     // create main label (wrapper)
     const lblMain = document.createElement('label');
-    lblMain.classList.add('wrapper-h');
+    lblMain.classList.add('wrapper-v');
     lblMain.id = 'pokemon-select';
     lblMain.name = 'pokemon-select';
 
@@ -11,7 +11,7 @@ export function makePokemon(pokemon) {
     const inpRadio = document.createElement('input');
     inpRadio.type = 'radio';
     inpRadio.name = 'pokemon-select';
-    lblMain.appendChild(inpRadoi);
+    lblMain.appendChild(inpRadio);
 
     // create image
     const imgPokemon = document.createElement('img');
@@ -22,6 +22,7 @@ export function makePokemon(pokemon) {
     // create stats
     const stats = document.createElement('label');
     stats.classList.add('stats');
+    stats.innerHTML = '	&#x1F512; 0 &#x1F441; 1';
     lblMain.appendChild(stats);
 
     return lblMain;
