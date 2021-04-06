@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { getSubset } from '../utils.js';
+import { getSubset, findById } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -7,12 +7,6 @@ test('testing getSubset', (expect) => {
     const arr = ['Pork', 'Blue', 'Fish', 'Fast', 'Tilt', 'Ripe', 'Bump', 'Kite', 'Seat', 'Home', 'Farm', 'Card', 'Math', 'Able'];
     const excl1 = [0, 4, 5];
     const excl2 = [1, 3, 45];
-
-    console.log(getSubset(arr));
-    console.log(getSubset(arr));
-    console.log(getSubset(arr));
-    console.log(getSubset(arr));
-    console.log(getSubset(arr));
 
     // Test to make sure unique elements
     let expected1 = getSubset(arr);
@@ -37,4 +31,38 @@ test('testing getSubset', (expect) => {
 
     // Test to make sure exclusion works
     expected1 = getSubset(arr, excl2);
+});
+
+test('testing findByID', (expect) => {
+    const arr = [
+        {
+            'id': 'aaa',
+            'name': 'pork'
+        },
+        {
+            'id': 'bbb',
+            'name': 'blue'
+        },
+        {
+            'id': 'ccc',
+            'name': 'fish'
+        },
+        {
+            'id': 'ddd',
+            'name': 'fast'
+        },
+        {
+            'id': 'bbb',
+            'name': 'tilt'
+        }
+    ];
+
+    // Test to make correct element returned (first with id)
+    let expected1 = findByID(arr, 'aaa').name;
+    let expected1 = findByID(arr, 'bbb').name;
+    let expected1 = findByID(arr, 'ccc').name;
+
+    expect.equal(expected1, 'pork');
+    expect.equal(expected2, 'blue');
+    expect.equal(expected3, 'fish');
 });

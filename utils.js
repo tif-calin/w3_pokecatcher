@@ -30,6 +30,17 @@ export function getSubset(arr, exclude = [], sample = 3) {
     return subsetElement;
 };
 
+export const findById = (itemArray, id) => {
+    for (let item of itemArray) {
+        if (item['id'] === id) return item;
+    }
+    return null;
+};
+
+export const setDex = pokedex => {
+    localStorage.setItem(POKEDEX, JSON.stringify(pokedex));
+};
+
 export function getPokedexEntry(id) {
 
 };
