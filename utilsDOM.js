@@ -9,6 +9,7 @@ export function makePokemon(pokemon) {
 
     // create input
     const inpRadio = document.createElement('input');
+    inpRadio.id = pokemon.id;
     inpRadio.type = 'radio';
     inpRadio.name = 'pokemon-select';
     lblMain.appendChild(inpRadio);
@@ -22,7 +23,7 @@ export function makePokemon(pokemon) {
     // create stats
     const stats = document.createElement('label');
     stats.classList.add('stats');
-    stats.innerHTML = '	&#x1F512; 0 &#x1F441; 1';
+    stats.innerHTML = '&#x1F512; 0 &#x1F441; 1';
     lblMain.appendChild(stats);
 
     return lblMain;
