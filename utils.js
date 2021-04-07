@@ -38,13 +38,27 @@ export function findById(itemArray, id) {
     return null;
 };
 
-export function setDex(pokedex) {
-    localStorage.setItem(POKEDEX, JSON.stringify(pokedex));
-};
-
 export function getDex() {
     const dex = JSON.parse(localStorage.getItem(POKEDEX));
 
     if (dex) return dex;
     else return [];
+};
+
+export function getHistory() {
+    const hist = JSON.parse(localStorage.getItem(HISTORY));
+
+    if (hist) return hist;
+    else return [];
+};
+
+export function setDex(pokedex) {
+    localStorage.setItem(POKEDEX, JSON.stringify(pokedex));
+};
+
+export function addHistory(session) {
+    const hist = getHistory();
+    hist.push(session);
+
+    localStorage.setItem(HISTORY, JSON.stringify(hist));
 };
