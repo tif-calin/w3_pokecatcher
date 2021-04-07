@@ -1,16 +1,22 @@
 /* add home page styles here */
+button {
+    margin-right: 0.5rem;
+}
 
-.pokemon-select img {
+#pokemon-select {
+    margin: 1rem;
+}
+
+#pokemon-select img {
     width: 10rem;
     height: max(10rem);
     filter: grayscale(90%);
 }
 
-.pokemon-select input {
+#pokemon-select input {
     visibility: hidden;
-
 }
 
-.pokemon-select input[type=radio]:checked + img {
+#pokemon-select input[type=radio]:checked + img {
     filter: drop-shadow(5px 5px 5px hsl(180, 50%, 50%));
 }

@@ -10,13 +10,10 @@
     <link rel="stylesheet" href="styles/_reset.css">
     <link rel="stylesheet" href="styles/_style.css">
     <link rel="stylesheet" href="styles/home.css">
-    <script type="module" src="app.js" defer></script>
+    <script type="module" src="./app.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <h2>PokéPick</h2>
-    </header>
     <main>
         <section class="main-section">
             <h3>Choose your Pokémon!</h3>
@@ -38,8 +35,8 @@
                 </label>
             </div>
             <div class="wrapper-h">
-                <button>Capture it!</button>
-                <button>View stats</button>
+                <button id="button-capture">Capture it!</button>
+                <a id="view-stats" href='./stats/'>View stats</a>
             </div>
         </section>
     </main>
