@@ -33,7 +33,7 @@ export function getSubset(arr, exclude = [], sample = 3) {
 
 export function findById(itemArray, id) {
     for (let item of itemArray) {
-        if (item['id'] === id) return item;
+        if (String(item['id']) === String(id)) return item;
     }
     return null;
 };

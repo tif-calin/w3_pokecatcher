@@ -1,4 +1,4 @@
-import pokemon from '../data/pokemon.js';
+import pokemons from '../data/pokemon.js';
 import { findById, getDex, getHistory } from '../utils.js';
 
 const bubblechart = document.querySelector('#bubble-chart');
@@ -10,7 +10,7 @@ function loadBubbles() {
     const pokeData = {};
     for (let session of sessions) {
         for (let entry of session) {
-            const pokemon = findById(pokemon, entry.id);
+            const pokemon = findById(pokemons, entry.id);
             const name = pokemon.name;
 
             if (pokeData[name]) {
