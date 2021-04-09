@@ -31,11 +31,9 @@ function loadBubbles() {
                         }
                     ]
                 };
-            };
-        };
-    };
-
-    console.log(Object.values(pokeData));
+            }
+        }
+    }
 
     new Chart(ctx, {
         type: 'bubble',

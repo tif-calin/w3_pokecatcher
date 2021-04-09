@@ -27,4 +27,4 @@ export function makePokemon(pokemon) {
     lblMain.appendChild(stats);
 
     return lblMain;
-};
+}
