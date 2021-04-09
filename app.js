@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { getSubset, getDex, findById, setDex } from './utils.js';
+import { getSubset, getDex, findById, setDex, resetDex } from './utils.js';
 import { makePokemon } from './utilsDOM.js';
 import pokemon from './data/pokemon.js';
 
@@ -53,6 +53,16 @@ btnCapture.addEventListener('click', () => {
     else currentDex.push({ 'id': selected.id, 'encounters': 0, 'captures': 1 })
 
     setDex(currentDex);
+
+    // reset session if this was the 10th capture
+    let sessionCaptures = 0;
+    for (let entry of currentDex) {
+        sessionCaptures += entry.captures;
+    };
+    if (sessionCaptures >= 10) {
+        resetDex();
+        window.location = './stats/';
+    };
 
     newPokemons();
 });
