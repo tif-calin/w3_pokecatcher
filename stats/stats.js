@@ -20,12 +20,12 @@ function loadBubbles() {
                 pokeData[name] = {
                     label: [name],
                     backgroundColor: pokemon.color_1,
-                    borderColor: pokemon.color_1,
+                    borderColor: pokemon.color_2,
                     data: [
                         {
                             x: entry.encounters,
                             y: entry.captures,
-                            r: 4
+                            r: 6
                         }
                     ]
                 };
@@ -46,19 +46,25 @@ function loadBubbles() {
                 display: true,
                 text: 'pokemans'
             },
+            responsive: false,
             scales: {
-                xAxes: [{
-                    scaleLabel: {
+                x: {
+                    title: {
                         display: true,
-                        labelString: 'Encounters'
+                        text: 'Encounters (all-time)'
                     }
-                }],
-                yAxes: [{
-                    scaleLabel: {
+                },
+                y: {
+                    title: {
                         display: true,
-                        labelString: 'Captures'
+                        text: 'Captures (all-time)'
                     }
-                }]
+                }
+            },
+            plugins: {
+                legend: {
+                    position: 'right'
+                }
             }
         }
     });
