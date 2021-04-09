@@ -1,6 +1,8 @@
 import pokemons from '../data/pokemon.js';
-import { findById, getDex, getHistory } from '../utils.js';
+import { findById, getDex, getHistory, resetDex } from '../utils.js';
 
+const buttonReset = document.querySelector('#button-reset');
+const buttonErase = document.querySelector('#button-erase');
 const ctx = document.getElementById('bubble-chart').getContext('2d');
 
 function loadBubbles() {
@@ -52,13 +54,15 @@ function loadBubbles() {
                     title: {
                         display: true,
                         text: 'Encounters (all-time)'
-                    }
+                    },
+                    min: 0
                 },
                 y: {
                     title: {
                         display: true,
                         text: 'Captures (all-time)'
-                    }
+                    },
+                    min: 0
                 }
             },
             plugins: {
@@ -71,3 +75,13 @@ function loadBubbles() {
 };
 
 loadBubbles();
+
+buttonReset.addEventListener('click', () => {
+    resetDex();
+    loadBubbles();
+});
+
+buttonErase.addEventListener('click', () => {
+    localStorage.clear();
+    loadBubbles();
+});

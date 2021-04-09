@@ -62,3 +62,8 @@ export function addHistory(session) {
 
     localStorage.setItem(HISTORY, JSON.stringify(hist));
 };
+
+export function resetDex() {
+    addHistory(getDex());
+    setDex([]);
+};
