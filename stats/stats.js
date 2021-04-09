@@ -1,7 +1,9 @@
-import pokemon from '../data/pokemon.js';
-import { findById, getDex, getHistory } from '../utils.js';
+import pokemons from '../data/pokemon.js';
+import { findById, getDex, getHistory, resetDex } from '../utils.js';
 
-const bubblechart = document.querySelector('#bubble-chart');
+const buttonReset = document.querySelector('#button-reset');
+const buttonErase = document.querySelector('#button-erase');
+const ctx = document.getElementById('bubble-chart').getContext('2d');
 
 function loadBubbles() {
     const sessions = getHistory();
@@ -10,8 +12,8 @@ function loadBubbles() {
     const pokeData = {};
     for (let session of sessions) {
         for (let entry of session) {
-            const pokemon = findById(pokemon, entry.id);
-            const name = pokemon.name;
+            const pokemon = findById(pokemons, entry.id);
+            const name = pokemon.pokemon;
 
             if (pokeData[name]) {
                 pokeData[name].data[0].x += entry.encounters;
@@ -24,21 +26,60 @@ function loadBubbles() {
                     data: [
                         {
                             x: entry.encounters,
-                            y: entry.captures
+                            y: entry.captures,
+                            r: 6
                         }
                     ]
-                }
+                };
             }
-        };
-    };
+        }
+    }
 
-    new CharacterData(bubblechart, {
-        type: 'bubbles',
+    new Chart(ctx, {
+        type: 'bubble',
         data: {
             labels: 'Pokemon',
-            datasets: pokeData
+            datasets: Object.values(pokeData)
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'pokemans'
+            },
+            responsive: false,
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Encounters (all-time)'
+                    },
+                    min: 0
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Captures (all-time)'
+                    },
+                    min: 0
+                }
+            },
+            plugins: {
+                legend: {
+                    position: 'right'
+                }
+            }
         }
     });
 };
 
 loadBubbles();
+
+buttonReset.addEventListener('click', () => {
+    resetDex();
+    loadBubbles();
+});
+
+buttonErase.addEventListener('click', () => {
+    localStorage.clear();
+    loadBubbles();
+});

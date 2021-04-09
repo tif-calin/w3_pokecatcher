@@ -33,7 +33,7 @@ export function getSubset(arr, exclude = [], sample = 3) {
 
 export function findById(itemArray, id) {
     for (let item of itemArray) {
-        if (item['id'] === id) return item;
+        if (String(item['id']) === String(id)) return item;
     }
     return null;
 };
@@ -61,4 +61,9 @@ export function addHistory(session) {
     hist.push(session);
 
     localStorage.setItem(HISTORY, JSON.stringify(hist));
+};
+
+export function resetDex() {
+    addHistory(getDex());
+    setDex([]);
 };
